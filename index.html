@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<input type="text" placeholder="당신의 일주일 총 근로시간" size="20" id="myTime" >시간
+ 	<button id="but">최저시급계산</button>
+ 	<div id="output" style="width: 500px; height:500px; background: yellow; color: red; text-align: center; line-height:  500px;">당신의 최저시급 주휴수당을 알려드립니다.</div>
+
+	<script type="text/javascript">
+
+		but.onclick = function(){
+
+			var standardWeight = (myTime.value / 40) * 8 * 7530;
+			var finalOutput = "당신의 근로시간은 " + myTime.value + "시간 이고 주휴수당은 " + standardWeight + "원 입니다."; 
+
+				output.innerHTML = finalOutput;
+
+			}
+
+
+
+
+
+		
+		
+
+
+	</script>
+
+</body>
+</html>
